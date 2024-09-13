@@ -24,6 +24,8 @@ y = y.flatten()
 X_train = X[:60000, :] 
 y_train = y[:60000] 
 
+
+
 # Splitting data into testing set with 10,000 examples 
 X_test = X[60000:, :] 
 y_test = y[60000:] 
@@ -74,3 +76,4 @@ print('Precision =', true_positive/(true_positive + false_positive))
 # Saving Thetas in .txt file 
 np.savetxt('Theta1.txt', Theta1, delimiter=' ') 
 np.savetxt('Theta2.txt', Theta2, delimiter=' ') 
+# code is working fine now have to change new dataset
